@@ -12,8 +12,6 @@ const path = require('path');
 const index = path.join(__dirname, '..', '/public', 'index.html');
 app.use(express.static(path.join(__dirname, '..', '/public')));
 
-module.exports = app;
-module.exports.handler = serverless(app);
 
 
 global.access_token;

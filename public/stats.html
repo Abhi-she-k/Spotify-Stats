@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Stats</title>
+    <link rel="icon" href='images/unnamed.png'>
+</head>
+<body>
+    <script>
+        if(performance.navigation.type==1) {
+            window.location.href='/'
+        }
+
+    </script>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        // JavaScript to hide loader when page is fully loaded
+        window.addEventListener("load", function() {
+                setTimeout(function() {
+                const loader = document.querySelector(".loader-wrapper");
+                loader.style.display = "none";
+            }, 1000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+    
+
+    <div id="topPage" style="background-color:#191414;">
+        <h4 id="title"  style="margin-top: 10px; margin-left: 15px;"><img src="images/unnamed.png" alt="" style="height: 50px; width: 50px; padding-right: 10px; position: relative; top:5px">Stats<button id="btn2" onclick="window.open('https://accounts.spotify.com/en/logout','_blank');window.location.reload();" style="background-color: red;" ><center>Log Out</center> </button></h>
+    </div>
+
+    <div class="UserInfo"></div>
+
+    <div class="Content-Buttons">
+        <a href="#art"><button class="conBut" name="Artists">Top Artists</button></a>
+        <a href="#song"><button class="conBut" name="Songs">Top Songs</button></a>
+        <a href="#his"><button class="conBut" name="History">Recently Played</button></a>
+        <a href="#playlists"><button class="conBut" name="History">My Playlists</button></a>
+    </div>
+
+ 
+    
+    <div class="socials">
+        <a href="https://github.com/Abhi-she-k"><img class="socialbtn" src="images/git.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/abhi311/"><img class="socialbtn" src="images/linkedin.png" alt=""></a>
+        <a href="mailto:abhishek.paul@ryerson.ca"><img class="socialbtn" src="images/Gmail.png" alt=""></a>
+        <a href="https://abhishekpaul.netlify.app/"><img class="socialbtn" src="images/website.png" alt=""></a>
+    </div>
+
+    <h3 class ="Title" id="art">Top Artists</h3>
+    <div class="Category" >
+        <div class="time">
+            <h5>4 Weeks</h5>
+            <div class="Songs"></div>
+        </div>
+        <div class="time">
+            <h5>6 Months</h5>
+            <div class="Songs"></div>
+        </div>
+        <div class="time">
+            <h5>All Time</h5>
+            <div class="Songs"></div>
+        </div>
+    </div>
+
+
+    <h3 class="Title" id="song">Top Songs</h3>
+    <div class="Category" >
+        <div class="time">
+            <h5>4 Weeks</h5>
+            <div class="Songs"></div>
+        </div>
+        <div class="time">
+            <h5>6 Months</h5>
+            <div class="Songs"></div>
+        </div>
+        <div class="time">
+            <h5>All Time</h5>
+            <div class="Songs"></div>
+        </div>
+    </div>
+
+    
+
+
+
+    
+    <h3 class ="Title2" id="his">Recently Played</h3>
+    <div class="History">
+    </div>
+
+    <h3 class ="Title2" id="playlists">Top Playlists</h3>
+    <div class="Playlists">
+    </div>
+
+    <script src = "scripts.js"></script>
+</body>
+
+</html>
+

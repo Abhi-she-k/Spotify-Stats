@@ -1,0 +1,346 @@
+h1, h2, h3, h4, h5, h6, strong{
+	padding: 0;
+    color:white;
+    font-family: "Montserrat";
+	
+}
+
+
+html {
+	font-size: 50px;
+	height: fit-content;
+	scroll-behavior: smooth;
+
+}
+
+body{
+    background: linear-gradient(90deg,#27d463, #36ce4b);
+}
+
+
+a{
+	text-decoration: none;
+}
+
+a:visited { 
+	color: white; 
+}
+
+.LogIn{
+	position: fixed;
+	top:40%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.title{
+	height:60px;
+	width: 1000px;
+	padding:50px;
+}
+
+.btn1{
+	height:70px;
+	width:300px;
+	font-size: 25px;
+	color: white;
+	font-family: "Montserrat";
+	border-radius: 40px;
+	background-color: #191414;
+	cursor: pointer;
+	transition: 0.5s;
+	border-width: 0px;
+
+}
+
+.btn1:hover {
+	padding-right: 25px;
+}
+
+.socials{
+	position: fixed;
+	top:100px;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	font-size: 0px;
+}
+
+.socialbtn{
+	height: 60px;
+	width:	60px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	cursor: pointer;
+	transition: 0.75s;
+	border-radius: 5px;
+
+}
+
+.socialbtn:hover {
+	transform: translateX(10px);
+}
+
+#top{
+	float: right;
+	position: fixed;
+	right:30px;
+	top:120px;
+	height: 60px;
+	width:	60px;
+	z-index: 1;
+	transition: 0.5s;
+	font-size: 0px;
+}
+
+#topPage{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	height: 90px;
+}
+
+#top:hover{
+	transform:scale(1.15);
+}
+
+#btn2{
+	height:50px;
+	width:200px;
+	font-size: 18px;
+	color: white;
+	font-family: "Montserrat";
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 0.5s;
+	border-width: 0px;
+	position: absolute;
+	top: 0;
+	right:0;
+	margin-top: 18px;
+	margin-right: 20px;
+	
+}
+
+#btn2:hover {
+	padding-right: 25px;
+}
+
+.UserInfo{
+	text-align: center;
+	margin-top: 150px;
+}
+
+#userName{
+	margin-bottom: -30px;
+}
+
+#proPic{
+	border-radius: 50%;
+	margin-bottom: -50px;
+	height: 200px;
+	width: 200px;
+}
+
+.Title{
+	text-align: center;
+
+	background-color:#191414;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom:150px;
+
+}
+
+.Title2{
+
+	text-align: center;
+	margin-bottom: 100px;
+	background-color:#191414;
+	padding: 20px;
+	border-radius: 10px;
+	color:white;
+}
+
+.time{
+	margin-left: 30px;
+	margin-right: 30px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.Category{
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: -150px;
+	align-items: center;
+
+
+}
+
+.Songs{
+	text-align: center;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.History{
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.Playlists{
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+.Child2{
+	height: 300px;
+	width: 350px;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 10px;
+	padding-top: 10px;
+	background: #15873d;
+	z-index: -1;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex; /* Make it a flex container */
+	flex-direction: column; /* Stack image and text vertically */
+	align-items: center; /* Center items horizontally within the flex container */
+	margin: 15px;
+	transition:0.20s;
+	
+}	
+
+
+
+
+.Child2:hover{
+	transform: scale(1.15);
+	background-color: #29292994;
+	z-index: -1;
+	transition: 0.5s;
+	
+}
+
+.Child2:hover #Pic {
+	transition:1s;
+	filter:blur(20px);
+	background-color: blue;
+	
+	
+}
+
+.Child2:hover .Child2Text {
+	visibility: hidden;	
+}
+
+.Child2:hover .Child2Text2 {
+    visibility:visible;
+    opacity:1;
+}
+
+.Child2Text2{
+	visibility: hidden;
+	position: absolute;
+    opacity: 1;
+    transition: visibility 0s ease;
+	padding:25px;
+	padding-left: 70px;
+	padding-right: 70px;
+	border-radius: 10px;
+    opacity: 0;
+	transition:visibility 0.3s linear,opacity 0.3s linear;
+	z-index: 1;
+
+}
+
+
+#songhis{
+	font-size: 25px;
+}
+
+#Pic{
+	height:150px;
+	width: 150px;
+	margin-bottom: -30px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+
+.Content-Buttons{
+	text-align: center;
+	margin-top:30px;
+	margin-bottom: -10px;
+}
+
+.conBut{
+	background-color: #1e9b49;
+	height: 60px;
+	width: 300px;
+	border-radius:30px;
+	margin: 15px;
+	color: white;
+	font-family: "Montserrat";
+	transition: 0.5s;
+	border-width: 0;
+	font-size: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background: linear-gradient(150deg, #5cff75 0%, #919691 100%);
+}
+
+.conBut:hover{
+	padding-right: 25px;
+	background-color: #191414;
+}
+
+
+.loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:  #17a4497a;;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; 
+  }
+  
+  .loader {
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid  #15873d;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 0.5s linear infinite; 
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

@@ -67,12 +67,14 @@ async function stats(endpoint, div, type){
         let div2 = document.createElement("div")
         div2.className = "Child2Text2"
         div2.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${item.id}?utm_source=generator" width="350px" height="375px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+        console.log(div2.innerHTML)
         div.append(div2)
     }
     else{
         let div2 = document.createElement("div")
         div2.className = "Child2Text2"
         div2.innerHTML = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${item.id}?utm_source=generator" width="350px" height="375px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+        console.log(div2.innerHTML)
         div.append(div2)
     }
     pic.src = item.pic

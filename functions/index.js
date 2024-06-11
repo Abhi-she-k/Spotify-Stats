@@ -160,7 +160,7 @@ app.get('/TopSong/:length',async function(req,res){
 
 app.get('/his',async function(req,res){
   
-  const his = await getData('/me/player/recently-played/?limit=25');
+  const his = await getData('/me/player/recently-played/?limit=10');
   
   dataList=[]
   for(const a in his.items){

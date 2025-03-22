@@ -1,5 +1,5 @@
 async function getStat(endpoint){
-    var url ="https://spotifystats-kou6.onrender.com/"
+    var url ="http://localhost:3002/"
     try{
         const response = await fetch(url+endpoint)
         data = await response;

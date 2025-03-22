@@ -2,7 +2,7 @@ FROM node:16
 
 EXPOSE 3002
 
-WORKDIR /app/functions
+WORKDIR /app
 
 COPY package*.json ./
 

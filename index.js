@@ -2,33 +2,32 @@ require('dotenv').config();
 
 const express = require('express')
 const app = express()
-const router = express.Router();
 
-
-const port =3004
+const port =3002
 const querystring = require('querystring')
 const path = require('path');
 
 
-const index = path.join(__dirname, '..', '/public', 'index.html');
-app.use(express.static(path.join(__dirname, '..', '/public')));
-
+const index = path.join(__dirname, 'public', 'index.html');
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // lest
 global.access_token;
 const client_id = 'df40d135664a4a2cbae1c4db4de04977';
-const local_host = process.env.LOCAL_HOST
+const local_host = "http://localhost:" + port
 // const local_host = 'https://spotifystats-kou6.onrender.com'
 const redirect_uri = local_host+'/callback';
 const client_secret = '5419800129b84a63920a4d20d12fbb6e'
 const scope = 'user-read-private user-read-email ugc-image-upload user-top-read user-library-read user-library-modify user-read-recently-played playlist-modify-private playlist-read-collaborative user-read-playback-state' 
 
-app.listen(process.env.PORT ||3002,() => {
+app.listen(port,() => {
 	console.log(`Example app listening at http://localhost:${port}/`);
   console.log(local_host)
 });
 
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
+  console.log("Path to index.html:", index); // Check the file path
   res.sendFile(index);
 });
 

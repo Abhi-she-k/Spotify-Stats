@@ -1,5 +1,7 @@
+
+
 async function getStat(endpoint){
-    var url ="http://localhost:3002/"
+    var url = "http://localhost:3002/"
     try{
         const response = await fetch(url+endpoint)
         data = await response;

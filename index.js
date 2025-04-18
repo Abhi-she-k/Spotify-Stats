@@ -1,4 +1,5 @@
 require('dotenv').config();
+const fetch = require('node-fetch');
 
 const express = require('express')
 const app = express()
@@ -7,7 +8,6 @@ const port =3002
 const querystring = require('querystring')
 const path = require('path');
 
-
 const index = path.join(__dirname, 'public', 'index.html');
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // lest
 global.access_token;
 const client_id = 'df40d135664a4a2cbae1c4db4de04977';
-const local_host = "http://localhost:" + port
-// const local_host = 'https://spotifystats-kou6.onrender.com'
+// const local_host = "http://localhost:" + port
+const local_host = 'https://spotifystats-cha9azegh3ebg3d0.canadacentral-01.azurewebsites.net'
 const redirect_uri = local_host+'/callback';
 const client_secret = '5419800129b84a63920a4d20d12fbb6e'
 const scope = 'user-read-private user-read-email ugc-image-upload user-top-read user-library-read user-library-modify user-read-recently-played playlist-modify-private playlist-read-collaborative user-read-playback-state' 

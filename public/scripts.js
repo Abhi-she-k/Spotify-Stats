@@ -1,7 +1,7 @@
 
 
 async function getStat(endpoint){
-    var url = "http://localhost:3002/"
+    var url = "https://spotifystats-cha9azegh3ebg3d0.canadacentral-01.azurewebsites.net/"
     try{
         const response = await fetch(url+endpoint)
         data = await response;
